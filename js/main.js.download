@@ -1,0 +1,94 @@
+
+$(window).load(function() {
+   
+   
+   
+   
+$(document).ready(function() {
+   
+    $("#open-more-info").on("click", function() {
+        $(".overlay").toggleClass("skew-part"),
+        $("#right-side").toggleClass("hide-right"),
+        $("#close-more-info").toggleClass("hide-close"),
+        $(".mCSB_scrollTools").toggleClass("mCSB_scrollTools-left"),
+        setTimeout(function() {
+            $("#mcs_container").mCustomScrollbar("scrollTo", "#right-side", {
+                scrollInertia: 500,
+                callbacks: !1
+            })
+        }, 350)
+    }),
+   
+  
+   
+  
+    
+   
+    $("#notifyMe").notifyMe(),
+    function() {
+        var e = document.querySelector("[data-dialog]")
+          , t = document.getElementById(e.getAttribute("data-dialog"))
+          , o = new DialogFx(t);
+        e.addEventListener("click", o.toggle.bind(o))
+    }();
+    var o = function(e) {
+        for (var t = function(e) {
+           
+          
+        }, i = function(e) {
+           
+        }, n = function() {
+            var e = window.location.hash.substring(1)
+              , t = {};
+            if (e.length < 5)
+                return t;
+            for (var o = e.split("&"), i = 0; i < o.length; i++)
+                if (o[i]) {
+                    var n = o[i].split("=");
+                    n.length < 2 || (t[n[0]] = n[1])
+                }
+            return t.gid && (t.gid = parseInt(t.gid, 10)),
+            t
+        }, l = function(e, o, i, n) {
+            var l = document.querySelectorAll(".pswp")[0], a, r, c;
+            if (c = t(o),
+            r = {
+                galleryUID: o.getAttribute("data-pswp-uid"),
+                getThumbBoundsFn: function(e) {
+                    var t = c[e].el.getElementsByTagName("img")[0]
+                      , o = window.pageYOffset || document.documentElement.scrollTop
+                      , i = t.getBoundingClientRect();
+                    return {
+                        x: i.left,
+                        y: i.top + o,
+                        w: i.width
+                    }
+                }
+            },
+            n)
+                if (r.galleryPIDs) {
+                    for (var s = 0; s < c.length; s++)
+                        if (c[s].pid === e) {
+                            r.index = s;
+                            break
+                        }
+                } else
+                    r.index = parseInt(e, 10) - 1;
+            else
+                r.index = parseInt(e, 10);
+            isNaN(r.index) || (i && (r.showAnimationDuration = 0),
+            a = new PhotoSwipe(l,PhotoSwipeUI_Default,c,r),
+            a.init())
+        }, a = document.querySelectorAll(e), r = 0, c = a.length; c > r; r++)
+            a[r].setAttribute("data-pswp-uid", r + 1),
+            a[r].onclick = i;
+        var s = n();
+        s.pid && s.gid && l(s.pid, a[s.gid - 1], !0, !0)
+    };
+    o(".my-gallery")
+});
+});
+
+
+
+
