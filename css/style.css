@@ -1,6 +1,83 @@
 
 
+body{
+	overflow-x: hidden;
+}
 
+.myw-25{
+	width: 30%;
+}
+
+.main_header{
+	position: absolute;
+	right:0;
+	left: 0;
+	top: 150px;
+	width: 65%;
+	margin: auto;
+	text-align: center;
+    font-size: 5rem;
+    color: #fff;
+}
+.main_header h1{
+	font-size: 3rem;
+}
+
+
+
+/* ANIMATED X */
+.navbar-toggler.x {
+	border: none;
+  }
+  .navbar-toggler.x:focus {
+	outline: none;
+  }
+  .navbar-toggler.x[aria-expanded=true] .icon-bar:nth-of-type(1) {
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	-webkit-transform-origin: 10% 10%;
+	-ms-transform-origin: 10% 10%;
+	transform-origin: 10% 10%;
+  }
+  .navbar-toggler.x[aria-expanded=true] .icon-bar:nth-of-type(2) {
+	opacity: 0;
+	filter: alpha(opacity=0);
+  }
+  .navbar-toggler.x[aria-expanded=true] .icon-bar:nth-of-type(3) {
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	-webkit-transform-origin: 10% 90%;
+	-ms-transform-origin: 10% 90%;
+	transform-origin: 10% 90%;
+  }
+  .navbar-toggler.x .icon-bar {
+	width: 22px;
+	display: block;
+	height: 2px;
+	background-color: #fff;
+	-webkit-transition: all 0.2s;
+	transition: all 0.2s;
+  }
+  .navbar-toggler.x .icon-bar + .icon-bar {
+	margin-top: 4px;
+  }
+  .navbar-toggler.x .icon-bar:nth-of-type(1) {
+	-webkit-transform: rotate(0);
+	-ms-transform: rotate(0);
+	transform: rotate(0);
+  }
+  .navbar-toggler.x .icon-bar:nth-of-type(2) {
+	opacity: 1;
+	filter: alpha(opacity=100);
+  }
+  .navbar-toggler.x .icon-bar:nth-of-type(3) {
+	-webkit-transform: rotate(0);
+	-ms-transform: rotate(0);
+	transform: rotate(0);
+  }
+  
 
 .item span {
   /*display: block;
@@ -947,7 +1024,8 @@ to {
 	text-stroke: 1px solid #00f !important;
 }
 .ps-section__title span.num_txt {
-	color: #444fb9;
+	color: #fff;
+	/* color: #444fb9; */
 	font-size: 78px;
 	/*! background: #5444c45e; */
 	width: 40px;
@@ -1031,8 +1109,8 @@ to {
 /* Section - Parallax */
 /**************************/
 #parallax-world-of-ugg .parallax-one {
-	padding-top: 200px;
-	padding-bottom: 200px;
+	padding-top: 100px;
+	padding-bottom: 100px;
 	overflow: hidden;
 	position: relative;
 	width: 100%;
@@ -1869,8 +1947,8 @@ ul.bxcube li {
 
 .boxes {
   display: block;
-  width:50px;
-  height: 50px;
+  /* width:50px;
+  height: 50px; */
  
   position: relative;
   overflow: hidden;
@@ -1907,3 +1985,29 @@ ul.bxcube li {
 
 footer{
 	background:#0c132d;}
+
+
+
+
+	@media (max-width:768px){
+		.main_header h1{
+			font-size: 2rem;
+		}
+		.vrt{
+			top:105px;
+			left:60px;
+		}
+	}
+
+	@media (max-width:580px){
+		.main_header{
+			top:115px;
+		}
+		.main_header h1{
+			font-size: 1.4rem;
+		}
+		.vrt{
+			top:95px;
+			left:40px;
+		}
+	}
