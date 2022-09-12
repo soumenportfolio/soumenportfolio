@@ -2083,6 +2083,11 @@ footer{
 			text-align: center;
 			width: 100%;
 		}
+		.scrl_btm {
+			 
+			top: 38px;
+			z-index: 9999999;
+		}
 	}
 
 	@media (max-width:580px){
@@ -2105,6 +2110,12 @@ footer{
 
 		.title h1{
 			font-size: 2.1rem;
+		}
+
+		.scrl_btm {
+			 
+			top: 68px;
+			z-index: 9999999;
 		}
 	}
 
@@ -2135,5 +2146,7 @@ footer{
 			 margin-top: -5px;  
 			 
 		}
+
+		
 	
 	}
