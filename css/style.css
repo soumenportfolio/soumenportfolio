@@ -2147,6 +2147,10 @@ footer{
 			 
 		}
 
-		
+		.scrl_btm {
+			 
+			top: 88px;
+			z-index: 9999999;
+		}
 	
 	}
