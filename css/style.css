@@ -53,7 +53,7 @@ footer .cf .boxes{
 
 
 
-.title {
+.parallax-one .title {
 	/* font-family: "Cairo"; */
 	text-align: center;
 	color: #FFF;
@@ -67,7 +67,7 @@ footer .cf .boxes{
 	/* background-color: #010; */
 }
 
-.title h1 {
+.parallax-one .title h1 {
 	/* background-image: url(https://media3.giphy.com/media/3ohhwgLQiCF365bIR2/giphy.gif?cid=790b7611f0136390678a5765b69349a429eda4dfbcaf12f9&rid=giphy.gif&ct=g); */
 	background-image: url(../images/smk.gif);
 	/* background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif); */
@@ -2063,6 +2063,17 @@ footer{
 	background:#0c132d;}
 
 
+	@media (min-width:1450px){
+		.bg-pers-pic{
+			max-width: 1155px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.Words{
+			margin-left: -90px;
+			margin-top: 5px;
+		}
+	}
 	@media (max-width:1180px){
 		.Words{
 			margin-left: -90px;
