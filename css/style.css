@@ -2165,8 +2165,11 @@ footer{
 		}
 
 		.navbar.sticky{
-			padding-top: 20px;
-			padding-bottom:0px;}
+			padding-top: 28px !important;
+			padding-bottom: 0px;
+			height: 76px;
+		
+		}
 	
 	}
 
