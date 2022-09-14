@@ -180,7 +180,9 @@ footer .cf .boxes{
  
  .item--secondary.aos-init.aos-animate.sticky{
 	 position:fixed;
-	 background: #464db98a;}
+	 background: #464db98a;
+	
+}
  
  
 /************ aos end ***********/
@@ -2149,6 +2151,10 @@ footer{
 		.navbar {
 			 
 			padding: 0.5rem 0rem !important;
+			position: fixed !important;
+			top:-5px;
+			width: 100%;
+			background: #4F40B861;
 		}
 
 		.nav-link.trial_btn{
@@ -2157,6 +2163,10 @@ footer{
 		.vrt {
 			display: none;
 		}
+
+		.navbar.sticky{
+			padding-top: 20px;
+			padding-bottom:0px;}
 	
 	}
 
