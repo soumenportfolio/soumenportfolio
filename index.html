@@ -510,7 +510,7 @@ to {
 
   <div class="container-fluid p-0">
  
- <nav class="navbar navbar-expand-lg navbar-dark bg-custom zcontainer sticky" id="stnv">   
+ <nav class="navbar navbar-expand-lg navbar-dark zbg-custom zcontainer" id="stnv">   
 	<!--<a class="navbar-brand" href=""> <img class="logo" src="" alt="">Site Logo </a>-->
 <button class="navbar-toggler  zx" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon icon-bar"></span>
@@ -1262,9 +1262,24 @@ to {
 <script src="./js/script_aos.js.download"></script>
 
 
-<script> 
-    $('.navbar-nav>li>a').on('click', function(){
-    $('.navbar-collapse').collapse('hide');
-});
-    </script>
+<script>
+
+    var x = document.querySelectorAll(".navbar")
+
+    x.forEach(i => {
+        i.addEventListener('click', my_fnc)
+    })
+
+
+    function my_fnc (e) {
+        var y = document.querySelector(".navbar-collapse.collapse.show");
+        // e.target.classList.toggle("active")
+        y.classList.remove("show")
+    }
+
+
+ 
+
+
+</script>
  </body></html>
